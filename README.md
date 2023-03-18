@@ -1,38 +1,39 @@
+English | [日本語](README.ja.md)
 # Snippet Inserter
 
- Snippet Inserterは、Visual Studio Code用の拡張機能です。この拡張機能を使用すると、指定されたフォルダ内のファイルから特定のスニペットのみを挿入することができます。
+ Snippet Inserter is an extension for Visual Studio Code. This extension allows you to insert only specific snippets from files in a given folder.
 
-## 主な機能
+## Main Features
 
-- ファイルから特定のスニペットを挿入
-  - 「@snippet_start」が含まれる箇所から「@snippet_end」までの部分を抜き出して挿入します
-  - プログラミング言語に応じた行コメントと併用してお使いください
-- スニペットを探すフォルダを設定することで検索をより効率化できます
+- Insert specific snippets from files
+  - Extracts and inserts the portion from the point containing "@snippet_start" to "@snippet_end
+  - Use in conjunction with line comments according to your programming language
+- You can set up a folder to search for snippets to make your search more efficient
 
-## インストール
+## Installation
 
-1. Visual Studio Codeの拡張機能タブを開く
-2. 検索バーに "Snippet Inserter" と入力し、拡張機能を見つける
-3. "Install" ボタンをクリックして拡張機能をインストール
-4. インストール後、Visual Studio Codeを再起動
+1. open the Extensions tab of Visual Studio Code
+2. Type "Snippet Inserter" in the search bar to find the extension 
+3. Click the "Install" button to install the extension 
+4. After installation, restart Visual Studio Code
 
-## 使い方
+## How to use
 
-1. ファイルにスニペットを追加します。スニペットは、「@snippet_start」を含む行から始まり、「@snippet_end」を含む行で終わります。
+1. Add a snippet to the file. A snippet starts with a line containing "@snippet_start" and ends with a line containing "@snippet_end".
 
-例：
+Example.
 
 ```cpp
-// 行コメントが「//」である例を想定
+// Assume an example where the line comment is "//".
 // @snippet_start
-// この部分がスニペットとして挿入されます
+// this part is inserted as a snippet
 // @snippet_end
 ```
 
-2. 開いているファイルで、スニペットを挿入したい位置にカーソルを置きます。
+2. Position the cursor in the open file where you want to insert the snippet. 
 
-3. コマンドパレットを開き、「Insert Snippet」コマンドを実行します。
+3. Open the Command Palette and execute the "Insert Snippet" command. 
 
-4. 指定されたフォルダ内のファイル一覧が表示されるので、スニペットを挿入したいファイルを選択します。
+4. A list of files in the specified folder will be displayed, so select the file into which you want to insert a snippet. 
 
-5. 選択したファイルのスニペットが、現在開いているファイルのカーソル位置に挿入されます。
+5. The snippet of the selected file will be inserted at the cursor position of the currently opened file.
