@@ -4,12 +4,20 @@ import * as path from 'path';
 import * as readline from 'readline';
 
 export async function insertSnippet(searchFolder: string | undefined) {
-  const cppFiles = await vscode.workspace.findFiles(
-    new vscode.RelativePattern(searchFolder || vscode.workspace.rootPath || '', '**/*'),
+  // 指定した拡張子を読み込み
+  const targetFileExtensions: string[] = vscode.workspace
+    .getConfiguration('snippet-inserter')
+    .get('targetFileExtensions', ['.*']);
+
+  // Create a search pattern using the registered file extensions
+  const searchPattern = `**/*{${targetFileExtensions.join(',')}}`;
+  
+  const files = await vscode.workspace.findFiles(
+    new vscode.RelativePattern(searchFolder || vscode.workspace.rootPath || '', searchPattern),
     '**/node_modules/**'
   );
 
-  const items = cppFiles.map((uri) => ({ label: path.basename(uri.fsPath), description: uri.fsPath }));
+  const items = files.map((uri) => ({ label: path.basename(uri.fsPath), description: uri.fsPath }));
 
   const selected = await vscode.window.showQuickPick(items, { placeHolder: 'ファイルを選択してください' });
 

@@ -29,11 +29,14 @@ Example.
 // this part is inserted as a snippet
 // @snippet_end
 ```
+2. Open the Command Palette and execute the "Set Snippet Folder" command and set folder path.
 
-2. Position the cursor in the open file where you want to insert the snippet. 
+3. Open the Command Palette and execute the "Update Target File Extensions" command and set extensions you need.
 
-3. Open the Command Palette and execute the "Insert Snippet" command. 
+4. Position the cursor in the open file where you want to insert the snippet. 
 
-4. A list of files in the specified folder will be displayed, so select the file into which you want to insert a snippet. 
+5. Open the Command Palette and execute the "Insert Snippet" command. 
 
-5. The snippet of the selected file will be inserted at the cursor position of the currently opened file.
+6. A list of files in the specified folder will be displayed, so select the file into which you want to insert a snippet. 
+
+7. The snippet of the selected file will be inserted at the cursor position of the currently opened file.

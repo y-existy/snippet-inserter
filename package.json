@@ -3,7 +3,7 @@
   "name": "snippet-inserter",
   "displayName": "snippet-inserter",
   "description": "ファイルから特定部分のコードのみinsertするアドオンです",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.76.0"
   },
@@ -16,7 +16,7 @@
     "commands": [
       {
         "command": "snippet-inserter.insertSnippet",
-        "title": "Snippet Inserter: Insert snippet from file"
+        "title": "Snippet Inserter: Insert Snippet From File"
       },
       {
         "command": "snippet-inserter.setFolder",
@@ -24,7 +24,7 @@
       },
       {
         "command": "snippet-inserter.updateExtensions",
-        "title": "Update Target File Extensions"
+        "title": "Snippet Inserter: Update Target File Extensions"
       }
     ],
     "configuration": {

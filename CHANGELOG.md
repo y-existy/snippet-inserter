@@ -2,8 +2,13 @@
 
 All notable changes to the "snippet-inserter" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## Release note
 
-## [Unreleased]
+### 0.0.3
+- Add "Filter Extensions" feature
 
+### 0.0.2
+- Add "Set Folder" feature
+
+### 0.0.1
 - Initial release
