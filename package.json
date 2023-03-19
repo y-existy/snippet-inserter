@@ -21,6 +21,10 @@
       {
         "command": "snippet-inserter.setFolder",
         "title": "Snippet Inserter: Set Snippet Folder"
+      },
+      {
+        "command": "snippet-inserter.updateExtensions",
+        "title": "Update Target File Extensions"
       }
     ],
     "configuration": {
@@ -30,6 +34,13 @@
           "type": "string",
           "default": "",
           "description": "デフォルトのファイル検索フォルダ"
+        },
+        "snippet-inserter.targetFileExtensions": {
+          "type": "array",
+          "default": [
+            ".*"
+          ],
+          "description": "Specify the file extensions to search for snippets."
         }
       }
     }
