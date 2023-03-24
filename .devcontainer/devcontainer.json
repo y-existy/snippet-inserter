@@ -1,0 +1,14 @@
+{
+  "name": "snippet-inserter",
+  "dockerFile": "Dockerfile",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "MS-CEINTL.vscode-language-pack-ja",
+        "amodio.tsl-problem-matcher"
+      ]
+    }
+  },
+  "runArgs": []
+}
