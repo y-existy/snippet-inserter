@@ -58,7 +58,8 @@
     "watch-tests": "tsc -p . -w --outDir out",
     "pretest": "npm run compile-tests && npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
-    "test": "node ./out/test/runTest.js"
+    "test": "node ./out/test/runTest.js",
+    "make vsix": "vsce package"
   },
   "devDependencies": {
     "@types/glob": "^8.1.0",
@@ -77,6 +78,7 @@
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
+    "vsce": "^2.15.0",
     "vscode-languageclient": "^8.1.0",
     "vscode-languageserver": "^8.1.0",
     "vscode-languageserver-protocol": "^3.17.3"

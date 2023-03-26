@@ -10,6 +10,9 @@ English | [日本語](README.ja.md)
   - Use in conjunction with line comments according to your programming language
 - You can set up a folder to search for snippets to make your search more efficient
 
+## build
+- `vsce package`
+
 ## Installation
 
 1. open the Extensions tab of Visual Studio Code
